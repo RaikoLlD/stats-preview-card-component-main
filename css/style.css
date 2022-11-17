@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+}
+
+ .Container{
+  width: 100%;
+  max-width: 1440px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card{
+  width: 95%;
+  max-width: 1110px;
+  height: 446px;
+  display: flex;
+  border-radius: 10px;
+
+}
+
+
+.Righ-Side{
+  width: 48.6%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  border-radius: 0 10px 10px 0;
+
+}
+
+.header-desktop-color{
+  width: 540px;
+  height: 100%;
+  background-color: rgba(94, 0, 144, 0.8);
+  opacity: .7;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  bottom: 450px;
+
+}
+
+.image{
+  border-radius: 0 10px 10px 0;
+}
+
+
+ .Card-information{
+  width: 51.4%;
+  min-width: 475px;
+  height: 100%;
+  padding: 4.5rem 4.5rem 4rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: -1;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0 0 10px;
+
+}
+
+.card-top{
+  width: 100%;
+  min-width: 378px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.card-title{
+  font-size: 2.24rem;
+  letter-spacing: 0.003rem;
+}
+
+.card-title span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card-parag{
+  max-width: 380px;
+  margin-top: 1.5rem;
+  font-size: 0.94rem;
+  font-weight: 200;
+  line-height: 1.55rem;
+  letter-spacing: 0.01rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-bottom{
+    width: 82.3%;
+    min-width: 315px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-bottom h2 {
+    margin-bottom: 6px;
+    font-size: 1.5rem;
+}
+
+.card-bottom p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .75rem;
+    font-weight: 200;
+    letter-spacing: .09rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+
+    body {
+        height: 100%;
+        min-height: 956px;
+    }
+
+    .Container {
+        max-width: none;
+        height: 100%;
+        min-height: 956px;
+    }
+
+    .Card {
+        width: 90%;
+        max-width: none;
+        height: 780px;
+        flex-direction: column-reverse;
+    }
+
+    .Right-Side {
+        width: 100%;
+        height: 240px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        border-radius: 10px 10px 0 0;
+    }
+   .header-desktop-color{
+     width: 100%;
+     height: 242px;
+     position: relative;
+     bottom:245px;
+     border-radius: 10px 10px 0 0;
+    }
+
+    .image {
+      width: 100%;
+      height: 240px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .Card-information {
+        min-width: 100%;
+        height: 780px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-top {
+        min-width: 350px;
+        height: auto;
+        padding: 0 1.5rem;
+    }
+
+    .card-title {
+        max-width: 90%;
+        margin-top: 1rem;
+        align-self: center;
+        font-size: 1.7rem;
+    }
+
+    .card-parag {
+        width: 90%;
+        margin-top: 1rem;
+        align-self: center;
+        font-size: .938rem;
+    }
+
+    .card-bottom {
+        height: 240px;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+} 
